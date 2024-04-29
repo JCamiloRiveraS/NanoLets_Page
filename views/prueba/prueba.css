@@ -1,0 +1,36 @@
+body {
+    font-family: poppins;
+    background-color: whitesmoke;
+  }
+
+  .calculadora{
+    position: relative;
+    display: grid;
+    place-items: center;
+
+  }
+  .calc_content{
+    position: relative;
+    border: solid 1px #696969  ;
+    border-radius: 28px;
+    padding: 5%;
+    text-align: center;
+    background-color: white;
+    width: 60vh;
+    height: 80vh;
+  }
+  .calc_content label{
+    font-family:  'Lucida Sans';
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .botnons{
+    margin: 5% 20px ;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+  }
+  .btn1{
+    margin: 2%;
+    padding: 52%;
+  }

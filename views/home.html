@@ -1,0 +1,840 @@
+<!-- Desarrollado por Camilo Rivera 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <!--fonts de google-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/home.css" />
+  </head>
+  <body>
+    <!--ventana emergente-->
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <h2>▂ ▃ ▅ ▆ █ NanoLets █ ▆ ▅ ▃ ▂</h2>
+        <p>
+          Este en un proyecto estudiantil con el fin de investigar e informar
+          sobre la solución de una problemática general
+        </p>
+        <button id="closeBtn">Continuar</button>
+      </div>
+    </div>
+    <!--section barra lateral-->
+    <section class="barra_lateral">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+          <h2>Usuario</h2>
+        </div>
+        <ul class="links">
+          <h4>Menú Principal</h4>
+          <li>
+            <span class="material-symbols-outlined">dashboard</span>
+            <a href="#">Panel</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">Show_chart</span>
+            <a href="#">Contribuciónes</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">flag</span>
+            <a href="#">Reportes</a>
+          </li>
+          <h4>Avanzado</h4>
+          <li>
+            <span class="material-symbols-outlined">person</span>
+            <a href="#">Usuario</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">group</span>
+            <a href="#">Equipo</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">ambient_screen</span>
+            <a href="#">Publicaciones</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">pacemaker</span>
+            <a href="#">Conexiones</a>
+          </li>
+          <hr />
+          <h4>Cuenta</h4>
+          <li>
+            <span class="material-symbols-outlined">bar_chart</span>
+            <a href="#">Resumen</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">mail</span>
+            <a href="#">Mensajes</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">settings</span>
+            <a href="#">Configuración</a>
+          </li>
+          <li class="logout_link">
+            <span class="material-symbols-outlined">Logout</span>
+            <a href="../index.html">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+    <!--section home-->
+    <section class="section_home">
+      <!--Titulo Nanolets-->
+      <div class="h1_home">
+        <div class="title_home">
+          <h2><a href="#" class="btn-shine">NANOLETS</a></h2>
+          <h3>El Futuro Está en Tus Ojos</h3>
+        </div>
+      </div>
+      <!--paypal-->
+      <div class="items_home">
+        <div class="cards_item_home">
+          <div class="card-id567">
+            <svg
+              shape-rendering="crispEdges"
+              viewBox="0 -0.5 29 29"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h7M8 0h2M14 0h1M16 0h5M22 0h7M0 1h1M6 1h1M13 1h1M17 1h2M22 1h1M28 1h1M0 2h1M2 2h3M6 2h1M8 2h1M11 2h4M18 2h1M20 2h1M22 2h1M24 2h3M28 2h1M0 3h1M2 3h3M6 3h1M8 3h2M11 3h1M13 3h1M15 3h5M22 3h1M24 3h3M28 3h1M0 4h1M2 4h3M6 4h1M8 4h4M13 4h1M15 4h1M19 4h1M22 4h1M24 4h3M28 4h1M0 5h1M6 5h1M9 5h1M12 5h2M17 5h4M22 5h1M28 5h1M0 6h7M8 6h1M10 6h1M12 6h1M14 6h1M16 6h1M18 6h1M20 6h1M22 6h7M9 7h1M11 7h1M15 7h6M0 8h4M6 8h1M8 8h1M13 8h2M17 8h3M21 8h1M24 8h3M28 8h1M2 9h1M4 9h2M7 9h1M9 9h1M14 9h1M16 9h1M19 9h2M22 9h3M28 9h1M0 10h5M6 10h1M8 10h1M13 10h1M16 10h1M18 10h1M20 10h1M22 10h3M26 10h2M1 11h1M3 11h2M7 11h1M11 11h4M16 11h1M18 11h1M20 11h5M28 11h1M1 12h3M5 12h2M9 12h1M11 12h1M13 12h5M19 12h1M25 12h2M0 13h2M3 13h3M8 13h1M10 13h2M14 13h1M16 13h2M19 13h2M22 13h2M26 13h3M0 14h1M2 14h1M4 14h3M9 14h2M12 14h1M14 14h1M16 14h1M19 14h3M23 14h2M26 14h3M0 15h2M3 15h2M8 15h1M12 15h1M14 15h3M20 15h1M22 15h3M27 15h1M0 16h1M2 16h3M6 16h1M10 16h2M18 16h1M20 16h2M24 16h2M27 16h1M1 17h2M4 17h1M7 17h3M12 17h1M14 17h2M18 17h1M20 17h2M23 17h1M25 17h3M0 18h1M3 18h1M6 18h1M8 18h5M15 18h2M23 18h1M26 18h1M2 19h4M12 19h1M14 19h1M16 19h2M19 19h3M26 19h1M1 20h1M3 20h1M6 20h7M14 20h2M17 20h10M8 21h3M12 21h1M18 21h1M20 21h1M24 21h5M0 22h7M9 22h6M19 22h2M22 22h1M24 22h2M27 22h1M0 23h1M6 23h1M9 23h1M13 23h3M18 23h1M20 23h1M24 23h2M27 23h1M0 24h1M2 24h3M6 24h1M10 24h1M12 24h1M14 24h4M20 24h5M26 24h3M0 25h1M2 25h3M6 25h1M8 25h1M11 25h2M15 25h2M19 25h3M24 25h2M28 25h1M0 26h1M2 26h3M6 26h1M8 26h1M10 26h2M13 26h1M21 26h1M23 26h1M26 26h1M28 26h1M0 27h1M6 27h1M8 27h1M11 27h1M14 27h1M16 27h1M18 27h3M23 27h1M25 27h1M27 27h1M0 28h7M8 28h1M14 28h3M19 28h2M25 28h1M27 28h1"
+                stroke="#000000"
+              ></path>
+            </svg>
+            <a xlink:href="" target=""> </a>
+            <div class="prompt-id567">
+              <div class="token-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  id="paypal"
+                >
+                  <path
+                    fill="#139AD6"
+                    d="M49.2 28.2h-3.4c-.2 0-.4.2-.5.4l-1.4 8.8c0 .2.1.3.3.3H46c.2 0 .3-.1.3-.3l.4-2.5c0-.2.2-.4.5-.4h1.1c2.3 0 3.6-1.1 3.9-3.3.2-.9 0-1.7-.4-2.2-.6-.5-1.5-.8-2.6-.8m.4 3.3c-.2 1.2-1.1 1.2-2 1.2H47l.4-2.3c0-.1.1-.2.3-.2h.2c.6 0 1.2 0 1.5.4.2.1.2.4.2.9"
+                  ></path>
+                  <path
+                    fill="#263B80"
+                    d="M24.7 28.2h-3.4c-.2 0-.4.2-.5.4l-1.4 8.8c0 .2.1.3.3.3h1.6c.2 0 .4-.2.5-.4l.4-2.4c0-.2.2-.4.5-.4h1.1c2.3 0 3.6-1.1 3.9-3.3.2-.9 0-1.7-.4-2.2-.6-.5-1.4-.8-2.6-.8m.4 3.3c-.2 1.2-1.1 1.2-2 1.2h-.5l.4-2.3c0-.1.1-.2.3-.2h.2c.6 0 1.2 0 1.5.4.1.1.2.4.1.9M35 31.4h-1.6c-.1 0-.3.1-.3.2l-.1.5-.1-.2c-.4-.5-1.1-.7-1.9-.7-1.8 0-3.4 1.4-3.7 3.3-.2 1 .1 1.9.6 2.5.5.6 1.2.8 2.1.8 1.5 0 2.3-.9 2.3-.9l-.1.5c0 .2.1.3.3.3H34c.2 0 .4-.2.5-.4l.9-5.6c-.1-.1-.3-.3-.4-.3m-2.3 3.2c-.2.9-.9 1.6-1.9 1.6-.5 0-.9-.2-1.1-.4-.2-.3-.3-.7-.3-1.2.1-.9.9-1.6 1.8-1.6.5 0 .8.2 1.1.4.3.3.4.8.4 1.2"
+                  ></path>
+                  <path
+                    fill="#139AD6"
+                    d="M59.4 31.4h-1.6c-.1 0-.3.1-.3.2l-.1.5-.1-.2c-.4-.5-1.1-.7-1.9-.7-1.8 0-3.4 1.4-3.7 3.3-.2 1 .1 1.9.6 2.5.5.6 1.2.8 2.1.8 1.5 0 2.3-.9 2.3-.9l-.1.5c0 .2.1.3.3.3h1.5c.2 0 .4-.2.5-.4l.9-5.6c-.1-.1-.2-.3-.4-.3m-2.3 3.2c-.2.9-.9 1.6-1.9 1.6-.5 0-.9-.2-1.1-.4-.2-.3-.3-.7-.3-1.2.1-.9.9-1.6 1.8-1.6.5 0 .8.2 1.1.4.4.3.5.8.4 1.2"
+                  ></path>
+                  <path
+                    fill="#263B80"
+                    d="M43.7 31.4H42c-.2 0-.3.1-.4.2L39.4 35l-1-3.2c-.1-.2-.2-.3-.5-.3h-1.6c-.2 0-.3.2-.3.4l1.8 5.3-1.7 2.4c-.1.2 0 .5.2.5h1.6c.2 0 .3-.1.4-.2l5.5-7.9c.3-.3.1-.6-.1-.6"
+                  ></path>
+                  <path
+                    fill="#139AD6"
+                    d="m61.3 28.5-1.4 9c0 .2.1.3.3.3h1.4c.2 0 .4-.2.5-.4l1.4-8.8c0-.2-.1-.3-.3-.3h-1.6c-.1-.1-.2 0-.3.2"
+                  ></path>
+                  <path
+                    fill="#263B80"
+                    d="M12 25.2c-.7-.8-2-1.2-3.8-1.2h-5c-.3 0-.6.3-.7.6l-2 13.1c0 .3.2.5.4.5H4l.8-4.9v.2c.1-.3.4-.6.7-.6H7c2.9 0 5.1-1.2 5.8-4.5v-.3c-.1 0-.1 0 0 0 .1-1.3-.1-2.1-.8-2.9"
+                  ></path>
+                  <path
+                    fill="#139AD6"
+                    d="M12.7 28.1v.3c-.7 3.4-2.9 4.5-5.8 4.5H5.4c-.3 0-.6.3-.7.6l-1 6.1c0 .2.1.4.4.4h2.6c.3 0 .6-.2.6-.5v-.1l.5-3.1v-.2c0-.3.3-.5.6-.5h.4c2.5 0 4.5-1 5-4 .2-1.2.1-2.3-.5-3-.1-.2-.3-.4-.6-.5"
+                  ></path>
+                  <path
+                    fill="#232C65"
+                    d="M12 27.8c-.1 0-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.4-.1-.8-.1-1.3-.1H6.2c-.1 0-.2 0-.3.1-.2.1-.3.3-.3.5l-.8 5.2v.2c.1-.3.4-.6.7-.6H7c2.9 0 5.1-1.2 5.8-4.5 0-.1 0-.2.1-.3-.2-.1-.3-.2-.5-.2-.3-.1-.3-.1-.4-.1"
+                  ></path>
+                </svg>
+              </div>
+              <div class="blurry-splash"></div>
+              <p>
+                Fondo de Recaudos<br /><span class="bold-567">NANOLETS</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Robot Img-->
+      <div class="home_content">
+        <img
+          src="../images/robot-8060634_1280-removebg-preview.png"
+          alt="BOT"
+        />
+      </div>
+      <!--Text Drerecha-->
+      <div class="text_home">
+        <h4>Documentación</h4>
+        <p>
+          Nuestro objetivo es transformar la forma en que nos comunicamos
+          globalmente. No se trata solo de superar las diferencias lingüísticas,
+          sino de fomentar una verdadera comprensión y conexión entre culturas.
+        </p>
+        <button>
+          <a href="#section_intro_id">Ver la Documentación Completa</a>
+        </button>
+      </div>
+    </section>
+    <!--section introducción-->
+    <section class="section_intro" id="section_intro_id">
+      <div class="intro">
+        <div class="figure_intro">
+          <img src="../images/watercolor-4116932_1280.png" alt="" />
+        </div>
+        <div class="content_intro">
+          <div class="card_intro">
+            <h4>Introducción</h4>
+            <p>
+              En un mundo cada vez más globalizado, la capacidad de comunicarse
+              eficazmente en diferentes idiomas se ha convertido en una
+              habilidad esencial. Este proyecto tiene como objetivo aprovechar
+              los avances en tecnología óptica, procesamiento de imágenes y
+              traducción automática para crear un dispositivo portable y
+              discreto que permita a los usuarios comprender y comunicarse en
+              diferentes idiomas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section planteamiento del problema-->
+    <section class="section_plant_problema">
+      <div class="content_pp">
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a
+                class="list-group-item list-group-item-action"
+                href="#list-item-01"
+                >Presentación del Tema</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                href="#list-item-02"
+                >Planteamiento del Problema</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                href="#list-item-03"
+                >Necesidad</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                href="#list-item-04"
+                >Importancia</a
+              >
+            </div>
+          </div>
+          <div class="col-8">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#list-example"
+              data-bs-smooth-scroll="true"
+              class="scrollspy-example"
+              tabindex="0"
+            >
+              <h4 id="list-item-01">Presentación del tema</h4>
+              <p>
+                Los avances en la tecnología de lentes de contacto han abierto
+                nuevas posibilidades en el campo de la comunicación
+                intercultural, nos proponemos desarrollar lentes de contacto
+                inteligentes capaces de traducir múltiples idiomas en tiempo
+                real, estos lentes de contactos tienen la capacidad de derribar
+                las barreras lingüísticas y facilitar la comunicación global de
+                manera más fluida y accesible.
+              </p>
+              <h4 id="list-item-02">Planteamiento del problema</h4>
+              <p>
+                Las personas si no comprenden varios idiomas puede limitar la
+                participación en algunos aspectos de la sociedad y la cultura,
+                por eso es importante darle una solución a esta problemática
+                para poder generarles una facilidad en el momento que las
+                personas quieran interactuar con otras personas de otros países
+                o que hablen múltiples idiomas.
+              </p>
+              <h4 id="list-item-03">Necesidad</h4>
+              <p>
+                La incapacidad de comprender varios idiomas puede generar
+                sentimientos de aislamiento cultural y limitar la participación
+                en algunos aspectos de la sociedad y la cultura. Aquellos que no
+                saben comunicarse en los idiomas locales pueden sentirse
+                excluidos y tener dificultades para integrarse plenamente en su
+                comunidad.
+              </p>
+              <h4 id="list-item-04">Importancia</h4>
+              <p>
+                Es importante darle una solución a esta problemática para poder
+                generarles una facilidad en el momento que las personas quieran
+                interactuar con otras personas de otros países o que hablen
+                múltiples idiomas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   section objetivos -->
+    <section class="section_objetivos">
+      <div class="content_objetivos">
+        <div class="parent">
+          <div class="div1">
+            <h3>Objetivo General</h3>
+            <p>
+              Investigar un sistema de lentes de contacto con capacidad de
+              traducción de más de 80 idiomas, utilizando tecnología óptica
+              avanzada y procesamiento de imágenes para mejorar la comunicación
+              intercultural de manera conveniente y accesible.
+            </p>
+          </div>
+          <div class="div2">
+            <h3>Objetivo Especifico</h3>
+            <p>
+              Investigar y desarrollar el software de traducción automática
+              capaz de procesar más de 80 idiomas con alta precisión y
+              velocidad.
+            </p>
+          </div>
+          <div class="div3">
+            <h3>Objetivo Especifico</h3>
+            <p>
+              Evaluar y optimizar la duración de la batería de los NANOLETS para
+              garantizar un uso mínimo de 3 horas continuas, considerando la
+              portabilidad y conveniencia para los usuarios.
+            </p>
+          </div>
+          <div class="div4">
+            <h3>Objetivo Especifico</h3>
+            <p>
+              Investigar soluciones alternativas para abordar el problema de
+              conectividad a WiFi en zonas rurales, como la integración de
+              tecnologías de conexión móvil o el desarrollo de redes de
+              comunicación independientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section slide horizontal infinito-->
+    <section class="section_slide_infinito">
+      <h3>Antecedentes</h3>
+      <hr />
+      <div class="slide_infinito">
+        <ul>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> badge </span>
+              <h4>Google lens</h4>
+              <p>
+                durante la conferencia de Google I/O 2022 la compañía presento
+                unos anteojos de realidad aumentada que traducen en tiempo real
+                una conversación entre personas que hablen distintos idiomas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> contact_emergency </span>
+              <h4>Oppo Air Glass 2</h4>
+              <p>
+                La marca asiática Oppo, en el Mobile World Congress 023 presenta
+                sus lentes de resina y guía óptica en el mundo que usa micro
+                proyectores LED, micrófono y altavoces dentro que, traducciones
+                en tiempo real entre otras experiencias.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> flowsheet </span>
+              <h4 style="font-size: 13px">Ray-Ban Meta Smart Glasses</h4>
+              <p>
+                Meta en colaboración con Ray-Ban está en el desarrollo de lentes
+                inteligentes equipados con inteligencia artificial (IA) que
+                permiten la traducción instantánea de conversaciones, la
+                identificación de objetos usando la experiencia tecnológica de
+                Meta.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> inactive_order </span>
+              <h4>ROG Smart Lens</h4>
+              <p>
+                La marca ROG (Republic Of Gamers) presenta sus lentes de
+                contacto optimizadas para videojuegos con características
+                dedicadas al campo de videojuegos como gestos con los ojos
+                simulando comandos en Windows y su tienda de aplicaciones
+                dedicadas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> folder_data </span>
+              <h4>Gafas Brilliant Labs</h4>
+              <p>
+                gafas inteligentes de realidad aumentada que integran pantallas
+                micro-OLED en sus lentes con las cuales sera posible analizar
+                alimentos o traducir carteles en tiempo real empleando
+                inteligencia artificial.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> smart_card_reader </span>
+              <h4>XRAI GLASS</h4>
+              <p>
+                gafas inteligentes que tienen integrada inteligencia artificial
+                y diseñadas para proporcionar subtítulos y la traducción en
+                tiempo real durante las conversaciones a las personas sordas,
+                con problemas de audición y para entender varios idiomas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> badge </span>
+              <h4>Google lens</h4>
+              <p>
+                durante la conferencia de Google I/O 2022 la compañía presento
+                unos anteojos de realidad aumentada que traducen en tiempo real
+                una conversación entre personas que hablen distintos idiomas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> contact_emergency </span>
+              <h4>Oppo Air Glass 2</h4>
+              <p>
+                La marca asiática Oppo, en el Mobile World Congress 023 presenta
+                sus lentes de resina y guía óptica en el mundo que usa micro
+                proyectores LED, micrófono y altavoces dentro que, traducciones
+                en tiempo real entre otras experiencias.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> flowsheet </span>
+              <h4 style="font-size: 13px">Ray-Ban Meta Smart Glasses</h4>
+              <p>
+                Meta en colaboración con Ray-Ban está en el desarrollo de lentes
+                inteligentes equipados con inteligencia artificial (IA) que
+                permiten la traducción instantánea de conversaciones, la
+                identificación de objetos usando la experiencia tecnológica de
+                Meta.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> inactive_order </span>
+              <h4>ROG Smart Lens</h4>
+              <p>
+                La marca ROG (Republic Of Gamers) presenta sus lentes de
+                contacto optimizadas para videojuegos con características
+                dedicadas al campo de videojuegos como gestos con los ojos
+                simulando comandos en Windows y su tienda de aplicaciones
+                dedicadas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> folder_data </span>
+              <h4>Gafas Brilliant Labs</h4>
+              <p>
+                gafas inteligentes de realidad aumentada que integran pantallas
+                micro-OLED en sus lentes con las cuales sera posible analizar
+                alimentos o traducir carteles en tiempo real empleando
+                inteligencia artificial.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> smart_card_reader </span>
+              <h4>XRAI GLASS</h4>
+              <p>
+                gafas inteligentes que tienen integrada inteligencia artificial
+                y diseñadas para proporcionar subtítulos y la traducción en
+                tiempo real durante las conversaciones a las personas sordas,
+                con problemas de audición y para entender varios idiomas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> badge </span>
+              <h4>Google lens</h4>
+              <p>
+                durante la conferencia de Google I/O 2022 la compañía presento
+                unos anteojos de realidad aumentada que traducen en tiempo real
+                una conversación entre personas que hablen distintos idiomas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> contact_emergency </span>
+              <h4>Oppo Air Glass 2</h4>
+              <p>
+                La marca asiática Oppo, en el Mobile World Congress 023 presenta
+                sus lentes de resina y guía óptica en el mundo que usa micro
+                proyectores LED, micrófono y altavoces dentro que, traducciones
+                en tiempo real entre otras experiencias.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> flowsheet </span>
+              <h4 style="font-size: 13px">Ray-Ban Meta Smart Glasses</h4>
+              <p>
+                Meta en colaboración con Ray-Ban está en el desarrollo de lentes
+                inteligentes equipados con inteligencia artificial (IA) que
+                permiten la traducción instantánea de conversaciones, la
+                identificación de objetos usando la experiencia tecnológica de
+                Meta.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> inactive_order </span>
+              <h4>ROG Smart Lens</h4>
+              <p>
+                La marca ROG (Republic Of Gamers) presenta sus lentes de
+                contacto optimizadas para videojuegos con características
+                dedicadas al campo de videojuegos como gestos con los ojos
+                simulando comandos en Windows y su tienda de aplicaciones
+                dedicadas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> folder_data </span>
+              <h4>Gafas Brilliant Labs</h4>
+              <p>
+                gafas inteligentes de realidad aumentada que integran pantallas
+                micro-OLED en sus lentes con las cuales sera posible analizar
+                alimentos o traducir carteles en tiempo real empleando
+                inteligencia artificial.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> smart_card_reader </span>
+              <h4>XRAI GLASS</h4>
+              <p>
+                gafas inteligentes que tienen integrada inteligencia artificial
+                y diseñadas para proporcionar subtítulos y la traducción en
+                tiempo real durante las conversaciones a las personas sordas,
+                con problemas de audición y para entender varios idiomas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> badge </span>
+              <h4>Google lens</h4>
+              <p>
+                durante la conferencia de Google I/O 2022 la compañía presento
+                unos anteojos de realidad aumentada que traducen en tiempo real
+                una conversación entre personas que hablen distintos idiomas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> contact_emergency </span>
+              <h4>Oppo Air Glass 2</h4>
+              <p>
+                La marca asiática Oppo, en el Mobile World Congress 023 presenta
+                sus lentes de resina y guía óptica en el mundo que usa micro
+                proyectores LED, micrófono y altavoces dentro que, traducciones
+                en tiempo real entre otras experiencias.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> flowsheet </span>
+              <h4 style="font-size: 13px">Ray-Ban Meta Smart Glasses</h4>
+              <p>
+                Meta en colaboración con Ray-Ban está en el desarrollo de lentes
+                inteligentes equipados con inteligencia artificial (IA) que
+                permiten la traducción instantánea de conversaciones, la
+                identificación de objetos usando la experiencia tecnológica de
+                Meta.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> inactive_order </span>
+              <h4>ROG Smart Lens</h4>
+              <p>
+                La marca ROG (Republic Of Gamers) presenta sus lentes de
+                contacto optimizadas para videojuegos con características
+                dedicadas al campo de videojuegos como gestos con los ojos
+                simulando comandos en Windows y su tienda de aplicaciones
+                dedicadas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> folder_data </span>
+              <h4>Gafas Brilliant Labs</h4>
+              <p>
+                gafas inteligentes de realidad aumentada que integran pantallas
+                micro-OLED en sus lentes con las cuales sera posible analizar
+                alimentos o traducir carteles en tiempo real empleando
+                inteligencia artificial.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="infinite_card">
+              <span class="material-symbols-outlined"> smart_card_reader </span>
+              <h4>XRAI GLASS</h4>
+              <p>
+                gafas inteligentes que tienen integrada inteligencia artificial
+                y diseñadas para proporcionar subtítulos y la traducción en
+                tiempo real durante las conversaciones a las personas sordas,
+                con problemas de audición y para entender varios idiomas.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section_justificacion">
+      <div class="justificacion">
+        <h3>Justificación</h3>
+        <p>
+          los lentes Nanolets ofrecen una solución innovadora y práctica para
+          superar las barreras del idioma, además son una revolución en las
+          comunicaciones, ya que cuenta con la capacidad de traducir en tiempo
+          real en más de 80 idiomas y todo esto siendo proyectado en tiempo
+          real, estas gafas son una herramienta indispensable para viajeros,
+          profesionales internacionales y personas que necesiten comunicarse de
+          manera efectiva en otro idioma, Su diseño compacto y fácil de usar
+          permite que personas de todas las edades los utilicen, brindando una
+          experiencia de comunicación fluida.
+        </p>
+      </div>
+    </section>
+
+    <section class="section_metodologia">
+      <div class="metodologia">
+        <h3>Metodología</h3>
+        <div class="content_meto">
+          <ul>
+            <li>
+              <div class="item_meto">
+                <div class="form_meto"></div>
+
+                <h4>1. Investigación y Desarrollo del Software</h4>
+                <!-- item1  -->
+                <ul>
+                  <li>
+                    <em>
+                      Realizar una verificación exhaustiva de las diferentes
+                      herramientas de traducción automática, prestando atención
+                      a aquellas que pueden traducir más de 80 idiomas bien y
+                      rápidamente</em
+                    >
+                  </li>
+                  <li>
+                    <em>
+                      Cree y pruebe algunas versiones del software que pueden
+                      traducir idiomas, utilizando elementos interesantes como
+                      cerebros artificiales y algoritmos de aprendizaje.</em
+                    >
+                  </li>
+                  <br />
+                </ul>
+                <h4>2. Implementación de Metodología Scrum:</h4>
+                <!-- item2  -->
+                <ul>
+                  <li>
+                    <em>
+                      Establecer equipos con diferentes expertos para hacer
+                      NANOLETS y asegurémonos de que todos sepan lo que están
+                      haciendo.</em
+                    >
+                  </li>
+                  <li>
+                    <em>
+                      Dividir el proyecto en partes más pequeñas (sprints) y
+                      entregue material de trabajo con frecuencia.</em
+                    >
+                  </li>
+                  <li>
+                    <em>
+                      Realizar controles diarios (scrum) para mantener a todos
+                      actualizados sobre lo que está sucediendo y cualquier
+                      desafío que podamos enfrentar".</em
+                    >
+                  </li>
+                  <li>
+                    <em>
+                      Adaptarse rápidamente a los cambios y retroalimentaciones
+                      del cliente durante el proceso de desarrollo.</em
+                    >
+                  </li>
+
+                  <br />
+                </ul>
+
+                <h4>3. Optimización de la Duración de la Batería:</h4>
+                <!-- item3  -->
+                <ul>
+                  <li>
+                    <em>
+                      Investigar y desarrollar tecnologías de gestión de energía
+                      eficientes para maximizar la duración de la batería de los
+                      NANOLETS.</em
+                    >
+                  </li>
+                  <li>
+                    <em>
+                      Realizar pruebas exhaustivas de consumo de energía en
+                      diferentes escenarios de uso para garantizar al menos 3
+                      horas de uso continuo.</em
+                    >
+                  </li>
+                  <br />
+                </ul>
+
+                <h4>
+                  4. Encontrar formas de hacer que Internet funcione en zonas
+                  rurales
+                </h4>
+                <!-- item4  -->
+                <ul>
+                  <li>
+                    <em>
+                      Intentar encontrar otras formas de mejorar el acceso a
+                      Internet en las zonas rurales, como utilizar tecnologías
+                      móviles (4G, 5G) o crear sus propias redes de
+                      comunicación.</em
+                    >
+                  </li>
+
+                  <br />
+                </ul>
+
+                <h4>5. Reducir los Costos de Producción:</h4>
+                <!-- item5  -->
+                <ul>
+                  <li>
+                    <em>
+                      Investigar más y hacer un mejor uso de la nanotecnología y
+                      la fabricación a escala para que la producción de NANOLETS
+                      sea más barata.</em
+                    >
+                  </li>
+                  <li>
+                    <em>
+                      Trabajar con otras empresas que fabrican cosas para
+                      conseguir lo que necesitas a bajo precio</em
+                    >
+                  </li>
+
+                  <br />
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_resultados">
+      <div class="resultados">
+        <h3>Resultados</h3>
+        <p class="result_p1">
+          El equipo de ingeniería de software, séptimo semestre de la Fundación
+          Escuela tecnológica de Neiva, Jesús Oviedo Pérez ha realizado una
+          investigación estructurada con el fin de llevar a cabo el
+          planteamiento y la futura creación de un software de traducción
+          informática visual, dicho prototipo será capaz de manejar con más de
+          80 idiomas con una eficacia, eficiencia y precisión completa, mediante
+          algoritmos avanzados que basado en un registro de los miles de los
+          caracteres existentes de cada idioma y una red neuronal efectiva que
+          garantiza la correcta traducción en tiempo real.
+        </p>
+        <p class="result_p2">
+          El proyecto se desarrollaría con una metodología SCRUM ya que con
+          entregas frecuentes y tempranas de productos funcionales , facilitan
+          la adaptación a los cambios durante un proceso de desarrollo. Uno de
+          los factores más complejos es prolongar de manera segura y estable la
+          capacidad de la batería, optimizando así su duración a un aproximado
+          de 3 horas de uso continuo, mejorando asi la portabilidad y comodidad
+          para los usuarios.
+        </p>
+        <p class="result_p3">
+          Otro aspecto que afectaba al sistema era la mejora y optimización de
+          la conectividad en áreas de escasa cobertura o zonas rurales que no
+          cuenten con conectividad móvil. Entre otras soluciones se ha aptoide
+          por la integración de tecnologías móviles y desarrollo de redes de
+          comunicación independientes. Se ha realizado un testeo total del
+          sistema en los aspectos de usabilidad, seguridad y precisión del
+          sistema en diferentes entornos y aspectos interculturales que, con sus
+          propios dialectos y referencias son provocan problemas en la
+          interpretación y al sentido de la traducción, los resultados obtenidos
+          respaldan la eficacia y confiabilidad de estos dispositivos.
+        </p>
+        <p class="result_p4">
+          Pensando en la experiencia del usuario se han creado los servicios de
+          atención al cliente y la posibilidad de acceder a futuras
+          actualizaciones de forma continua, accediendo asi a todas las
+          funcionalidades actuales y futuras El desarrollo del sistema de
+          NANOLETS representa un avance significativo en la comunicación
+          intercultural, ofreciendo una solución innovadora y accesible para
+          superar la brecha lingüística actual ya que a pesar de los desafíos
+          encontrados, el proyecto ha demostrado su viabilidad y efectividad a
+          través de investigaciones y desarrollos específicos.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <span class="material-symbols-outlined"> copyright </span
+      ><span>2024</span>
+    </footer>
+    <script src="../script/home.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
