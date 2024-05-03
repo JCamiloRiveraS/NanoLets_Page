@@ -1,32 +1,27 @@
 
-                                             ____
-                         	           _(____)_
-____________________________________ooO____(_o__o_)____Ooo_________________________________________
 
-	                              Proyecto NanoLets
-__________________________________________________________________________________________________
+	                      Proyecto NanoLets
+
 
 
 ██████████████████████████████ INSTRUCCIÓNES 100% ██████████████████████████████
 
 
-   ╔═══════════════════════════════════════════════════════════════════════╗ 
-   ║ 																					        ║
-   ║	Para inicializar la pagina, abrir el archivo "index.html"                               ║
-   ║	el cual lo llevará a la pagina de inicio,                                               ║
-   ║	la cual posee información superficial del proyecto.                                     ║
-   ║                                                                                            ║
-   ║	En esta pagina paparecerá el boton "ver documentación",                                 ║ 
-   ║	el cual lo llevará a la pagiina de la documentación completa,                           ║
-   ║	pero antes de esto tendrá que verificar si esta registrado o no.                       	║
-   ║	La función de registrarse NO ESTÁ DISPONIBLE asi que puede continuar como observador    ║
-   ║	                                                                                        ║
-   ╚═══════════════════════════════════════════════════════════════════════╝ 
+   ═══════════════════════════════════════════════════════════════════════
 
-_________________________________________________________________________________________________
-                          		  |__|     |__| 
-                      		           ||       || 
-                      		          ooO      Ooo 
+   
+   	Para inicializar la pagina, abrir el archivo "index.html"                               
+   	el cual lo llevará a la pagina de inicio,                                               
+   	la cual posee información superficial del proyecto.                                     
+                                                                                               
+   	En esta pagina paparecerá el boton "ver documentación",                                  
+   	el cual lo llevará a la pagiina de la documentación completa,                           
+   	pero antes de esto tendrá que verificar si esta registrado o no.                       	
+   	La función de registrarse NO ESTÁ DISPONIBLE asi que puede continuar como observador    
+    
+   	                                                                                        
+   ═══════════════════════════════════════════════════════════════════════
+
 
 
 
